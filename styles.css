@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 400px 52px 400px;
+}
+
+.main h1 {
+    color: #969696;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.main h1 span {
+    color: black;
+    font-weight: 700;
+}
+
+.main p {
+    font-size: 20px;
+}
+
+/* .main form {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+} */
+
+.main .form {
+    width: 100%;
+}
+
+.main .form form input {
+    padding: 15px 32px;
+    border-radius: 30px;
+    border: 1px solid #c2d3ff;
+    width: 50%;
+}
+
+.main .form form input::placeholder {
+    color: #c2d3ff;
+}
+
+.main .form form button {
+    padding: 15px 32px;
+    border-radius: 30px;
+    background-color: #4c7bf3;
+    color: white;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.23);
+    transition: all .3s ease-in-out;
+    width: 30%;
+}
+
+.main .form form button:hover {
+    opacity: 0.804;
+}
+
+.main #image {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.main .form form .error {
+    color: red;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.main .form form .submitted {
+    color: green;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+@media screen and (max-width:769px) {
+    .main {
+        padding: 80px 0px 52px 0px;
+    }
+
+    .main h1 {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .main p {
+        font-size: 15px;
+    }
+
+    .main .form form input {
+        width: 100%;
+    }
+
+    .main .form form button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
